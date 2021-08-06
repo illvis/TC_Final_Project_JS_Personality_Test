@@ -137,14 +137,14 @@ function loadNextQuestion() {
     selectedOption.nextElementSibling.getAttribute("data-total")
   );
 
-  ////Add the answer score to the score array
+  //Add the answer score to the score array
   score.push(answerScore);
 
   selectedAnswersData.push();
 
   const totalScore = score.reduce((total, currentNum) => total + currentNum);
 
-  //Finally we incement the current question number ( to be used as the index for each array)
+  //Finally we increment the current question number ( to be used as the index for each array)
   currentQuestion++;
 
   //once finished clear checked
@@ -174,7 +174,7 @@ function loadNextQuestion() {
 
 //Function to load previous question
 function loadPreviousQuestion() {
-  //Decrement quentions index
+  //Decrement questions index
   currentQuestion--;
   //remove last array value;
   score.pop();
